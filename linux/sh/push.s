@@ -25,6 +25,7 @@ _start:
     # for '\x00'
     pushl %ecx
     # 'h' 's' '/' '/'
+    #add    pushl $0x0068732f  则上面ecx表示字符串结束符也可以直接省略了
     pushl $0x68732f2f
     # 'n' 'i' 'b' '/'
     pushl $0x6e69622f
